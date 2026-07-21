@@ -1,0 +1,1114 @@
+/* =========================================================
+   FONTS
+   ========================================================= */
+
+@import url(
+    "https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&family=Send+Flowers&display=swap"
+);
+
+
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+
+:root {
+    --page-bg: #1b1b1b;
+    --surface: #242424;
+    --surface-secondary: #2a2a2a;
+    --surface-hover: #343434;
+
+    --text-primary: #eaeaea;
+    --text-secondary: #aaaaaa;
+    --text-muted: #777777;
+    --text-dark: #414141;
+
+    --border: #3a3a3a;
+    --border-light: #444444;
+
+    --accent: #4a90e2;
+    --accent-hover: #5ca0ef;
+    --accent-soft: rgba(74, 144, 226, 0.12);
+    --accent-selected: rgba(74, 144, 226, 0.18);
+
+    --grammar: #ffcc66;
+    --marker: #66b3ff;
+    --important: #df6d6d;
+
+    --speaker-one: #ef94dd;
+    --speaker-two: #83b5d7;
+
+    --radius-small: 6px;
+    --radius-medium: 10px;
+    --radius-large: 20px;
+
+    --content-width: 1400px;
+
+    --transition-fast: 160ms ease;
+    --transition-normal: 220ms ease;
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 320px;
+    background: var(--page-bg);
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+
+    color: var(--text-primary);
+    background: var(--page-bg);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    touch-action: manipulation;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+.vine-text {
+    font-family: "Great Vibes", cursive;
+}
+
+h1,
+h2,
+p {
+    overflow-wrap: anywhere;
+}
+
+h1 {
+    margin: 0;
+
+    color: var(--accent);
+
+    font-family: "Abril Fatface", serif;
+    font-size: clamp(3rem, 5vw, 4.125rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.subtitile {
+    margin:
+        clamp(-1.4rem, 1.2vw, -0.6rem)
+        0
+        clamp(2.5rem, 5vw, 3.75rem)
+        clamp(11rem, 25vw, 21.875rem);
+
+    color: var(--text-secondary);
+
+    font-family: "Send Flowers", cursive;
+    font-size: clamp(2rem, 3.2vw, 2.5rem);
+    line-height: 1.2;
+}
+
+h2 {
+    margin: 0 0 1rem;
+
+    color: var(--text-secondary);
+
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.container {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: calc(var(--content-width) + 40px);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* =========================================================
+   TOP PANEL
+   ========================================================= */
+
+.top-panel {
+    position: relative;
+    z-index: 10;
+
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+
+    min-height: 320px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   FILTERS
+   ========================================================= */
+
+.filters {
+    display: flex;
+    flex: 0 0 400px;
+    flex-direction: column;
+
+    min-width: 0;
+    padding: 20px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-large);
+
+    background: rgba(36, 36, 36, 0.35);
+}
+
+.filter-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 10px;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.filter-row:last-child {
+    margin-bottom: 0;
+}
+
+.filter-row .toggle-btn {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.toggle-btn,
+#filters-button {
+    min-height: 36px;
+
+    color: #dddddd;
+    background: var(--surface-secondary);
+
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-small);
+
+    cursor: pointer;
+
+    transition:
+        color var(--transition-fast),
+        background-color var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.toggle-btn {
+    padding: 7px 12px;
+
+    font-size: 0.875rem;
+    line-height: 1.2;
+}
+
+.toggle-btn:hover,
+#filters-button:hover {
+    background: var(--surface-hover);
+}
+
+.toggle-btn:focus-visible,
+#filters-button:focus-visible {
+    outline: 3px solid rgba(74, 144, 226, 0.35);
+    outline-offset: 2px;
+}
+
+.toggle-btn:active,
+#filters-button:active {
+    transform: scale(0.98);
+}
+
+.toggle-btn.active-btn {
+    color: #ffffff;
+    background: var(--accent);
+
+    border-color: var(--accent);
+}
+
+.toggle-btn.active-btn:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
+#filters-button {
+    display: block;
+
+    width: 100%;
+    padding: 8px 12px;
+
+    background: transparent;
+
+    font-size: 1.125rem;
+}
+
+
+/* =========================================================
+   TENSE DESCRIPTION PANEL
+   ========================================================= */
+
+.tense-meta {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+
+    min-width: 0;
+    max-height: 320px;
+    padding: 20px;
+
+    color: #dddddd;
+    background: rgba(36, 36, 36, 0.35);
+
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-large);
+
+    font-size: 1.3rem;
+    line-height: 1.3;
+
+    scrollbar-color: #555555 transparent;
+    scrollbar-width: thin;
+}
+
+.meta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.meta {
+    min-width: 0;
+    padding: 20px;
+
+    background: var(--surface-secondary);
+
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-medium);
+}
+
+.meta.selected {
+    border-color: var(--accent);
+
+    box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+.meta .name {
+    color: #ffffff;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.meta .construction,
+.meta .description,
+.meta .markers {
+    padding-left: 15px;
+}
+
+.meta .construction {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: var(--grammar);
+}
+
+.meta .description {
+    margin-top: 10px;
+
+    color: #a9a9a9;
+
+    font-size: 1.3rem;
+}
+
+.markers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.marker {
+    padding: 4px 15px;
+
+    color: var(--text-primary);
+    background: #47505b;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    font-size: 0.9375rem;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+.meta-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.meta-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.meta-container:-webkit-scrollbar-thumb {
+    background: #555555;
+
+    border: 2px solid var(--page-bg);
+    border-radius: 999px;
+}
+
+.meta-container::-webkit-scrollbar-thumb:hover {
+    background: #707070;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.stub {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+    padding: 20px;
+
+    text-align: center;
+}
+
+.stub-title {
+    margin: 10px;
+
+    color: var(--text-primary);
+
+    font-size: clamp(1.5rem, 3vw, 1.875rem);
+    line-height: 1.25;
+}
+
+.stub-description {
+    margin: 0;
+
+    color: #777777;
+
+    font-size: 1.125rem;
+}
+
+.empty-state .meta-container,
+.empty-state #table-body {
+    display: none;
+}
+
+.empty-state [data-stub] {
+    display: flex;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+   ========================================================= */
+
+/*
+   Рекомендуемая HTML-обёртка:
+
+   <div class="table-scroll">
+       <table class="tense-table">...</table>
+   </div>
+*/
+
+.table-scroll {
+    position: relative;
+    z-index: 10;
+
+    width: 100%;
+
+    overflow-x: auto;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    scrollbar-color: #555555 transparent;
+    scrollbar-width: thin;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-scroll::-webkit-scrollbar {
+    height: 9px;
+}
+
+.table-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+    background: #555555;
+
+    border: 2px solid var(--page-bg);
+    border-radius: 999px;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.tense-table {
+    position: relative;
+
+    width: 100%;
+    min-width: 900px;
+    max-width: var(--content-width);
+
+    color: var(--text-primary);
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px;
+
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+/*
+   Если таблица находится внутри .table-scroll,
+   внешнюю рамку отрисовывает обёртка.
+*/
+
+.table-scroll .tense-table {
+    border: 0;
+    border-radius: 0;
+}
+
+.tense-table th {
+    color: var(--text-muted);
+
+    font-weight: 400;
+}
+
+.tense-table th,
+.tense-table td {
+    padding: 10px;
+
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    vertical-align: top;
+}
+
+.tense-table th:last-child,
+.tense-table td:last-child {
+    border-right: 0;
+}
+
+.tense-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+
+/* =========================================================
+   INTERACTIVE TENSE NAME
+   ========================================================= */
+
+.tense-name {
+    position: relative;
+
+    width: 140px;
+    min-width: 140px;
+    padding: 12px 10px;
+
+    color: #b5b5b5;
+
+    cursor: pointer;
+    user-select: none;
+
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+
+    transition:
+        color var(--transition-normal),
+        background-color var(--transition-normal),
+        transform var(--transition-normal);
+}
+
+.tense-name:hover {
+    color: #ffffff;
+    background: var(--accent-soft);
+
+    transform: translateY(-1px);
+}
+
+.tense-name:hover::after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    box-shadow: inset 0 0 0 1px rgba(74, 144, 226, 0.25);
+
+    pointer-events: none;
+}
+
+.tense-name.active {
+    color: #ffffff;
+    background: var(--accent-selected);
+
+    font-weight: 600;
+}
+
+.tense-name:focus-visible {
+    outline: 3px solid rgba(74, 144, 226, 0.35);
+    outline-offset: -3px;
+}
+
+.tense-name:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================================
+   GRAMMAR FEATURES
+   ========================================================= */
+
+.grammar,
+.tense-marker {
+    color: inherit;
+
+    transition: color var(--transition-normal);
+}
+
+.grammar.active,
+.irregular-verb-2 {
+    color: var(--grammar);
+}
+
+.tense-marker.active {
+    color: var(--marker);
+}
+
+
+/* =========================================================
+   EXAMPLE TRANSLATION TOOLTIP
+   ========================================================= */
+
+.example {
+    position: relative;
+
+    cursor: help;
+}
+
+.translation {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 30;
+
+    width: min(100%, 620px);
+    padding: 10px 12px;
+
+    color: #111111;
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius-small);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform: translateY(-5px);
+
+    transition:
+        opacity var(--transition-normal),
+        visibility var(--transition-normal),
+        transform var(--transition-normal);
+}
+
+.example:hover .translation,
+.example:focus-within .translation {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   CONTENT HIGHLIGHTS
+   ========================================================= */
+
+.passive-voice {
+    margin-top: 10px;
+    padding: 10px;
+
+    background: #363636;
+
+    border-radius: var(--radius-medium);
+}
+
+.comment {
+    color: var(--text-muted);
+}
+
+.important {
+    color: var(--important);
+}
+
+.speaker-1 {
+    color: var(--speaker-one);
+
+    font-weight: 700;
+}
+
+.speaker-2 {
+    color: var(--speaker-two);
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   DECORATIVE IMAGE
+   ========================================================= */
+
+.corner-image {
+    position: fixed;
+    right: 0;
+    bottom: -80px;
+    z-index: 0;
+
+    width: min(36vw, 520px);
+    height: auto;
+
+    opacity: 0.95;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+
+/* =========================================================
+   FULLSCREEN VIDEO
+   ========================================================= */
+
+.tense-video {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    background: #000000;
+    opacity: 0.7;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   UTILITIES
+   ========================================================= */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 18px;
+    }
+
+    .subtitile {
+        margin-left: clamp(7rem, 24vw, 15rem);
+    }
+
+    .top-panel {
+        gap: 20px;
+    }
+
+    .filters {
+        flex-basis: 300px;
+    }
+
+    .tense-meta {
+        font-size: 1.2rem;
+    }
+
+    .meta .name {
+        font-size: 1.25rem;
+    }
+
+    .meta .description {
+        font-size: 1.5rem;
+    }
+
+    .corner-image {
+        width: min(42vw, 420px);
+        opacity: 0.7;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 16px 12px 28px;
+    }
+
+    h1 {
+        font-size: clamp(2.75rem, 14vw, 4rem);
+        text-align: center;
+    }
+
+    .subtitile {
+        margin:
+            -0.7rem
+            0
+            2.5rem;
+
+        font-size: clamp(1.8rem, 9vw, 2.5rem);
+        text-align: center;
+    }
+
+    .top-panel {
+        flex-direction: column;
+        gap: 16px;
+
+        min-height: 0;
+        margin-bottom: 20px;
+    }
+
+    .filters {
+        flex: none;
+
+        width: 100%;
+        padding: 16px;
+
+        border-radius: 14px;
+    }
+
+    .filter-wrapper {
+        max-width: none;
+        gap: 14px;
+    }
+
+    .filter-row {
+        gap: 8px;
+    }
+
+    .filter-row .toggle-btn {
+        flex: 1 1 calc(50% - 8px);
+    }
+
+    .toggle-btn,
+    #filters-button {
+        min-height: 44px;
+    }
+
+    .toggle-btn {
+        padding: 9px 10px;
+
+        font-size: 0.875rem;
+    }
+
+    #filters-button {
+        padding: 10px 12px;
+
+        font-size: 1rem;
+    }
+
+    .tense-meta {
+        max-height: none;
+        padding: 16px;
+
+        border-radius: 14px;
+
+        font-size: 1rem;
+    }
+
+    .meta-container {
+        gap: 14px;
+        overflow: visible;
+    }
+
+    .meta {
+        padding: 16px;
+    }
+
+    .meta .name {
+        font-size: 1.25rem;
+    }
+
+    .meta .construction,
+    .meta .description,
+    .meta .markers {
+        padding-left: 0;
+    }
+
+    .meta .description {
+        font-size: 1rem;
+    }
+
+    .marker {
+        padding: 4px 11px;
+
+        font-size: 0.8125rem;
+    }
+
+    .stub {
+        min-height: 180px;
+        padding: 24px 16px;
+    }
+
+    .stub-description {
+        font-size: 1rem;
+    }
+
+    .table-scroll {
+        margin-right: -12px;
+        margin-left: -12px;
+
+        width: calc(100% + 24px);
+
+        border-right: 0;
+        border-left: 0;
+        border-radius: 0;
+    }
+
+    .tense-table {
+        min-width: 760px;
+
+        font-size: 1rem;
+    }
+
+    .tense-table th,
+    .tense-table td {
+        padding: 9px;
+    }
+
+    .tense-name {
+        width: 120px;
+        min-width: 120px;
+    }
+
+    /*
+       На сенсорных устройствах hover ненадёжен,
+       поэтому перевод показывается под примером.
+    */
+
+    .example {
+        cursor: default;
+    }
+
+    .translation {
+        position: static;
+
+        width: 100%;
+        margin-top: 8px;
+        padding: 8px 10px;
+
+        color: #dddddd;
+        background: #303030;
+
+        border-color: var(--border);
+        border-radius: 6px;
+
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+
+        transform: none;
+    }
+
+    .corner-image {
+        position: fixed;
+
+        right: 0;
+        bottom: -500;
+
+        width: 300px;
+        max-width: none;
+
+        z-index: 9999;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 14px 10px 24px;
+    }
+
+    .filter-row {
+        flex-direction: column;
+    }
+
+    .filter-row .toggle-btn {
+        flex: none;
+
+        width: 100%;
+    }
+
+    .filters,
+    .tense-meta {
+        padding: 14px;
+
+        border-radius: 12px;
+    }
+
+    .meta {
+        padding: 14px;
+
+        border-radius: 8px;
+    }
+
+    .markers {
+        gap: 7px;
+    }
+
+    .table-scroll {
+        width: calc(100% + 20px);
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+
+    .tense-table {
+        min-width: 700px;
+
+        font-size: 0.9375rem;
+    }
+
+    .tense-table th,
+    .tense-table td {
+        padding: 8px;
+    }
+
+    .tense-name {
+        width: 105px;
+        min-width: 105px;
+        padding: 10px 7px;
+    }
+
+    .corner-image {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

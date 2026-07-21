@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>All tenses in use</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+
+
+    <body data-page="all-tenses-in-use">
+        <main>
+            <div class="container">
+                <h1>All tenses in USE</h1>
+                <div class="subtitile">with Darya</div>
+
+                <div class="top-panel">
+                    
+                    <section class="filters">
+                        <h2>Фильтры:</h2>
+
+                        <div class="filter-row">
+                            <button data-type="tense" data-value="present" class="toggle-btn">Настоящее</button>
+                            <!-- <button data-type="tense" data-value="future" class="toggle-btn">Future</button>
+                            <button data-type="tense" data-value="past" class="toggle-btn">Past</button> -->
+                        </div>
+
+                        <div class="filter-row">
+                            <button data-type="aspect" data-value="simple" class="toggle-btn">Простое</button>
+                            <button data-type="aspect" data-value="continuous" class="toggle-btn">Длительное</button>
+                            <!-- <button data-type="aspect" data-value="perfect" class="toggle-btn">Perfect</button> -->
+                        </div>
+
+                        <div class="filter-row">
+                            <button data-type="column" data-value="question" class="toggle-btn">Вопрос</button>
+                            <button data-type="column" data-value="statement" class="toggle-btn">Утверждение</button>
+                            <button data-type="column" data-value="negation" class="toggle-btn">Отрицание</button>
+                        </div>
+
+                        <!-- <div class="filter-row">
+                            <button data-type="voice" data-value="active-voice" class="toggle-btn">Active voice</button>
+                            <button data-type="voice" data-value="passive-voice" class="toggle-btn">Passive voice</button>
+                        </div> -->
+
+                        <div class="filter-row">
+                            <button data-type="feature" data-value="grammar" class="toggle-btn">Грамматика</button>
+                            <button data-type="feature" data-value="tense-marker" class="toggle-btn">Маркер времени</button>
+                        </div>
+                    </section>
+                    
+
+                    <section class="tense-meta">
+                        <h2>Описание времени:</h2>
+                        
+                        <div class="meta-container"></div>
+                        
+                        <div class="stub hidden" data-stub="meta">
+                            <div class="stub-title">Пока ничего не выбрано</div>
+                            <div class="stub-description">Используйте фильтры для отображения описания времени.</div>
+                        </div>
+                    </section>
+                </div>
+                
+                <section class="table-container">
+                    <div class="table-scroll">
+                        <table class="tense-table">
+                            <thead>
+                                <tr>
+                                    <th class="column-name">Время</th>
+                                    <th class="column-name question">Вопрос</th>
+                                    <th class="column-name statement">Утверждение</th>
+                                    <th class="column-name negation">Отрицание</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="table-body"></tbody>
+                        </table>    
+                    </div>
+
+                    <div class="stub hidden" data-stub="table">
+                        <div class="stub-title">Пока ничего не выбрано</div>
+                        <div class="stub-description">Используйте фильтры для отображения примеров использования времен.</div>
+                    </div>
+                </section>
+
+                
+                <img src="media/img/student-art.png" class="corner-image">
+                
+
+                <video id="tense-video" class="tense-video" playsinline>
+                    <source src="media/video/rock.mp4" type="video/mp4" />
+                </video>
+            
+            </div>
+        </main>
+
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>

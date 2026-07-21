@@ -1,0 +1,289 @@
+[
+
+  {
+    "meta": {
+        "tense": "Present Continuous",
+        "construction": "Subject + to be + V-ing",
+        "description": "Используется для выражения действия, происходящего прямо сейчас, временной ситуации, запланированного будущего, а также раздражающей повторяющейся ситуации (обычно с always).",
+        "markers": ["now", "right now", "at the moment", "currently", "today", "this week"]
+    },
+
+    "question": {
+        "active": [
+            {
+                "english": "Am I having an English lesson now?",
+                "russian": "У меня сейчас урок английского?",
+                "comment": "Действие происходит прямо сейчас."
+            },
+
+            {
+                "english": "Am I still watching Dorohedoro?",
+                "russian": "Я все еще смотрю  Dorohedoro?",
+                "comment": "Незавершенное действие/процесс."
+            },
+
+            {
+                "english": "Am I still looking for a storekeeper?",
+                "russian": "Я все еще ищу кладовщика?",
+                "comment": "Незавершенное действие/процесс."
+            },
+
+            {
+                "english": "Is Redos showing his ass right now?",
+                "russian": "Редос прямо сейчас показывает свою жопу?",
+                "comment": "Действие происходит прямо сейчас."
+            }, 
+
+            {
+                "english": "Are my parents still hanging out in the countryside?",
+                "russian": "Мои родители все еще зависают на даче?",
+                "comment": "Незавершенное действие/процесс."
+            }
+        ],
+
+        "passive": []
+        
+    }, 
+
+    "statement": {
+        "active": [
+            {
+                "english": "I am having an English lesson now.",
+                "russian": "Я сейчас на уроке английского.",
+                "comment": "Действие происходит прямо сейчас."
+            }, 
+
+            {
+                "english": "I am still watching Dorohedoro.",
+                "russian": "Я все еще смотрю Dorohedoro.",
+                "comment": "Незавершенное действие/процесс."
+            }, 
+
+            {
+                "english": "I am still looking for a storekeeper.",
+                "russian": "Я все еще ищу кладовщика.",
+                "comment": "Незавершенное действие/процесс."
+            }, 
+
+            {
+                "english": "Redos is showing his ass to nobody right now.",
+                "russian": "прямо сейчас Редоc никому не показывает свою жопу.",
+                "comment": "Действие происходит прямо сейчас."
+            }, 
+
+            {
+                "english": "My parents are still hanging out in the countryside.",
+                "russian": "Мои родители все еще зависают на даче.",
+                "comment": "Незавершенное действие/процесс."
+            }
+
+        ],
+
+        "passive": []
+    },
+
+    "negation": {
+        "active": [
+            {
+                "english": "I am not having an English lesson now.",
+                "russian": "У меня сейчас не урок английского.",
+                "comment": "Отрицание действия, происходящего прямо сейчас."
+            }, 
+
+            {
+                "english": "I am not looking for a storekeeper.",
+                "russian": "Я не ищу кладовщика.",
+                "comment": "Отрицание действия, происходящего прямо сейчас."
+            }, 
+
+            {
+                "english": "Redos isn't showing his ass to anybody right now.",
+                "russian": "Редоc никому не показывает свою жопу прямо сейчас.",
+                "comment": "Действие происходит прямо сейчас."
+            }, 
+
+            {
+                "english": "My parents aren't hanging out in the countryside now.",
+                "russian": "Мои родители не зависают на даче сейчас.",
+                "comment": "Отрицание действия, происходящего прямо сейчас."
+            }
+
+        ],
+
+        "passive": []
+    }
+    
+  }, 
+
+  {
+    "meta": {
+        "tense": "Present Simple",
+        "construction": "Subject + V1 (-s/-es для 3-го лица)",
+        "description": "Используется для выражения регулярных действий, привычек, фактов, общих истин, расписаний и постоянных состояний.",
+        "markers": ["always", "usually", "often", "sometimes", "every day / week / year", "on Mondays"]
+    },
+
+    "question": {
+        "active": [
+            {
+                "english": "Do I work in HR?",
+                "russian": "Я работаю в отделе найма?",
+                "comment": "Факт о месте работы."
+            },
+
+            {
+                "english": "Do I work 5 days a week?",
+                "russian": "Я работаю 5 дней в неделю?",
+                "comment": "Регулярное действие"
+            },
+
+            {
+                "english": "Do I wake up at 7 a.m.?",
+                "russian": "Я просыпаюсь в 7 утра?",
+                "comment": "Привычка."
+            },
+
+            {
+                "english": "Do I like watching anime?",
+                "russian": "Мне нравится смотреть аниме?",
+                "comment": "Постоянное предпочтение."
+            },
+
+            {
+                "english": "Do I play computer games in the evenings?",
+                "russian": "Я играю в компьютерные игры по вечерам?",
+                "comment": "Привычка."
+            },
+
+            {
+                "english": "How often does Redos show his ass to people?",
+                "russian": "Как часто Редос показывает свою жопу людям?",
+                "comment": "Регулярное действие."
+            },
+
+            {
+                "english": "Does my best friend take me out for a walk at weekends?",
+                "russian": "По выходным мой лучший друг вытаскивает меня из дома прогуляться?",
+                "comment": "Регулярное действие."
+            },
+
+            {
+                "english": "Do my parents always tell me how to live?",
+                "russian": "Мои родители всегда проповедуют мне как жить?",
+                "comment": "Регулярное повторяющееся действие."
+            }
+        ],
+
+        "passive": []
+    },
+
+    "statement": {
+        "active": [
+            {
+                "english": "I work in HR.",
+                "russian": "Я работаю в отделе найма.",
+                "comment": "Факт."
+            },
+
+            {
+                "english": "I work 5 days a week.",
+                "russian": "Я работаю 5 дней в неделю.",
+                "comment": "Регулярное действие."
+            },
+
+            {
+                "english": "I wake up at 7 a.m.",
+                "russian": "Я просыпаюсь в 7 утра.",
+                "comment": "Привычка."
+            },
+
+            {
+                "english": "I like watching anime.",
+                "russian": "Мне нравится смотреть аниме.",
+                "comment": "Постоянное предпочтение."
+            },
+
+            {
+                "english": "I play computer games in the evenings.",
+                "russian": "Я играю в компьютерные игры по вечерам.",
+                "comment": "Привычка."
+            },
+
+            {
+                "english": "Redos sometimes shows his ass but not to me.",
+                "russian": "Редов иногда показывает свою жопу, но не мне.",
+                "comment": "Регулярное действие."
+            },
+
+            {
+                "english": "My best friend takes me out for a walk at weekends.",
+                "russian": "По выходным мой лучший друг вытаскивает меня из дома прогуляться.",
+                "comment": "Регулярное действие."
+            },
+
+            {
+                "english": "My parents always tell me how to live.",
+                "russian": "Мои родители всегда проповедуют мне как жить.",
+                "comment": "Регулярное повторяющееся действие."
+            }
+        ],
+
+        "passive": []
+    },
+
+    "negation": {
+        "active": [
+            {
+                "english": "I don't work as a teacher.",
+                "russian": "Я не работаю учителем.",
+                "comment": "Отрицание факта."
+            },
+
+            {
+                "english": "I don't work at weekends.",
+                "russian": "Я не работаю по выходным",
+                "comment": "Регулярное отсутствие действия."
+            },
+
+            {
+                "english": "I don't wake up at 7 a.m. at weekends.",
+                "russian": "Я не просыпаюсь в 7 утра в выходные.",
+                "comment": "Отрицание привычки."
+            },
+
+            {
+                "english": "I don't like watching Harry Potter.",
+                "russian": "Мне не нравится смотреть Гарри Поттера.",
+                "comment": "Отрицание постоянного предпочтения."
+            },
+            
+            {
+                "english": "I don't do my English homework in the evenings since I am always knackered after work.",
+                "russian": "Я не делаю домашку по вечерам так как всегда пиздос уставшая после рабтоы.",
+                "comment": "Регулярное отсутствие действия."
+            },
+            
+            {
+                "english": "Redos doesn't show me his ass in general. :(",
+                "russian": "В целом, Редос не показывает мне свою жопу.",
+                "comment": "Постоянная ситуация."
+            },
+            
+            {
+                "english": "My best friend doesn't take me out for a walk on weekdays.",
+                "russian": "Мой лучший друг не тащит меня прогуляться в будние дни.",
+                "comment": "Регулярное отсутствие действия."
+            },
+
+            {
+                "english": "My parents don't usually tell how to work in HR department.",
+                "russian": "Мои родители не поучают меня как работать в отделе найма",
+                "comment": "Регулярное отсутствие действия."
+            }
+        ],
+
+        "passive": []
+    }
+  }
+
+]
