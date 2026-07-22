@@ -67,7 +67,7 @@
 
             {
                 "english": "Redos is showing his ass to nobody right now.",
-                "russian": "прямо сейчас Редоc никому не показывает свою жопу.",
+                "russian": "Прямо сейчас Редоc никому не показывает свою жопу.",
                 "comment": "Действие происходит прямо сейчас."
             }, 
 
@@ -144,8 +144,8 @@
             },
 
             {
-                "english": "Do I like watching anime?",
-                "russian": "Мне нравится смотреть аниме?",
+                "english": "Do I like cheese?",
+                "russian": "Мне нравится сыр?",
                 "comment": "Постоянное предпочтение."
             },
 
@@ -169,7 +169,7 @@
 
             {
                 "english": "Do my parents always tell me how to live?",
-                "russian": "Мои родители всегда проповедуют мне как жить?",
+                "russian": "Мои родители всегда говорят мне как жить?",
                 "comment": "Регулярное повторяющееся действие."
             }
         ],
@@ -198,8 +198,8 @@
             },
 
             {
-                "english": "I like watching anime.",
-                "russian": "Мне нравится смотреть аниме.",
+                "english": "I like cheese.",
+                "russian": "Мне нравится сыр.",
                 "comment": "Постоянное предпочтение."
             },
 
@@ -211,7 +211,7 @@
 
             {
                 "english": "Redos sometimes shows his ass but not to me.",
-                "russian": "Редов иногда показывает свою жопу, но не мне.",
+                "russian": "Редос иногда показывает свою жопу, но не мне.",
                 "comment": "Регулярное действие."
             },
 
@@ -223,7 +223,7 @@
 
             {
                 "english": "My parents always tell me how to live.",
-                "russian": "Мои родители всегда проповедуют мне как жить.",
+                "russian": "Мои родители всегда говорят мне как жить.",
                 "comment": "Регулярное повторяющееся действие."
             }
         ],
@@ -252,14 +252,14 @@
             },
 
             {
-                "english": "I don't like watching Harry Potter.",
-                "russian": "Мне не нравится смотреть Гарри Поттера.",
+                "english": "I don't like jellied meat.",
+                "russian": "Мне не нравится холодец.",
                 "comment": "Отрицание постоянного предпочтения."
             },
             
             {
                 "english": "I don't do my English homework in the evenings since I am always knackered after work.",
-                "russian": "Я не делаю домашку по вечерам так как всегда пиздос уставшая после рабтоы.",
+                "russian": "Я не делаю домашку по вечерам, так как всегда пиздос уставшая после рабтоы.",
                 "comment": "Регулярное отсутствие действия."
             },
             
